@@ -12,13 +12,13 @@ import seaborn as sns
 
 df = pd.read_csv("data/emotion_dataset_raw.csv")
 
-df.head()
+# df.head()
 
-df['Emotion'].value_counts()
+# df['Emotion'].value_counts()
 
 sns.countplot(x='Emotion',data=df)
 
-df
+# df
 
 x = df['Text']
 y = df['Emotion']
