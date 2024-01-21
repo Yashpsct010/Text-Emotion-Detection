@@ -2,13 +2,6 @@ joblib
 seaborn
 scikit-learn
 
-sklearn.model_selection
-sklearn.pipeline
-sklearn.feature_extraction.text
-sklearn.svm
-sklearn.ensemble
-sklearn.linear_model
-
 scikit-learn.model_selection
 scikit-learn.pipeline
 scikit-learn.feature_extraction.text
