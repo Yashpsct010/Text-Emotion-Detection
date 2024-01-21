@@ -1,24 +1,13 @@
 import streamlit as st
-
 import pandas as pd
 import numpy as np
 import altair as alt
-
 import joblib
-
-import pandas as pd
-import numpy as np
 import seaborn as sns
 
 df = pd.read_csv("data/emotion_dataset_raw.csv")
 
-# df.head()
-
-# df['Emotion'].value_counts()
-
 sns.countplot(x='Emotion',data=df)
-
-# df
 
 x = df['Text']
 y = df['Emotion']
