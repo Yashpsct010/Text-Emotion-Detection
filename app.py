@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
-df = pd.read_csv("emotion_dataset_raw.csv")
+df = pd.read_csv("data/emotion_dataset_raw.csv")
 
 df.head()
 
