@@ -1,7 +1,7 @@
 joblib
 seaborn
 scikit-learn
-
+streamlit
 
 # scikit-learn.model_selection
 # scikit-learn.pipeline
