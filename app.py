@@ -32,7 +32,9 @@ from sklearn.linear_model import LogisticRegression
 pipe_lr = Pipeline(steps=[('cv',CountVectorizer()),('lr',LogisticRegression())])
 pipe_lr.fit(x_train,y_train)
 pipe_lr.score(x_test,y_test)
-
+pipe_svm = Pipeline(steps=[('cv',CountVectorizer()),('svc', SVC(kernel = 'rbf', C = 10))])
+pipe_svm.fit(x_train,y_train)
+pipe_svm.score(x_test,y_test)
 pipe_rf = Pipeline(steps=[('cv',CountVectorizer()),('rf', RandomForestClassifier(n_estimators=10))])
 pipe_rf.fit(x_train,y_train)
 pipe_rf.score(x_test,y_test)
