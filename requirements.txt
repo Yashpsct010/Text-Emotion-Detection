@@ -2,6 +2,7 @@ joblib
 seaborn
 scikit-learn
 streamlit
+neattext
 
 # scikit-learn.model_selection
 # scikit-learn.pipeline
