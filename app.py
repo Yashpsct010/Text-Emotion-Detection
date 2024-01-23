@@ -8,7 +8,14 @@ import seaborn as sns
 df = pd.read_csv("data/emotion_dataset_raw.csv")
 
 sns.countplot(x='Emotion',data=df)
+import neattext.functions as nfx
 
+# Remove the user handles
+df['Clean_Text'] = df['Text'].apply(nfx.remove_userhandles)
+dir(nfx)
+# Remove the stopwords
+df['Clean_Text'] = df['Clean_Text'].apply(nfx.remove_stopwords)
+df
 x = df['Text']
 y = df['Emotion']
 
