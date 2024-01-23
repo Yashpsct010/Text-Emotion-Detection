@@ -16,7 +16,7 @@ dir(nfx)
 # Remove the stopwords
 df['Clean_Text'] = df['Clean_Text'].apply(nfx.remove_stopwords)
 df
-x = df['Text']
+x = df['Clean_Text']
 y = df['Emotion']
 
 from sklearn.model_selection import train_test_split
