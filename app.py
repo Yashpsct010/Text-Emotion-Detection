@@ -15,7 +15,6 @@ df['Clean_Text'] = df['Text'].apply(nfx.remove_userhandles)
 dir(nfx)
 # Remove the stopwords
 df['Clean_Text'] = df['Clean_Text'].apply(nfx.remove_stopwords)
-df
 x = df['Clean_Text']
 y = df['Emotion']
 
